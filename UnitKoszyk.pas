@@ -65,8 +65,17 @@ type
     DataSetProvider1: TDataSetProvider;
     qryDelete: TIBQuery;
     qryCartMCD_DYSPOZYCJE_KOSZYK_ID: TIntegerField;
-    BindSourceDB1: TBindSourceDB;
     DyspQry: TIBQuery;
+    GenIdQry: TIBQuery;
+    GenIdQryGEN_ID: TIntegerField;
+    qryCartELEMENT_ID: TIntegerField;
+    qryCartWYDZIALY_ID: TIntegerField;
+    qryCartSERIA_ID: TIntegerField;
+    qryCartLIMIT_ID: TIntegerField;
+    qryCartPZP_ID: TIntegerField;
+    qryCartELEMENT_WGR_KOD: TIBStringField;
+    qryCartMAGAZYN_DST_ID: TIntegerField;
+    BindSourceDB2: TBindSourceDB;
     procedure ToolbarCloseButtonClick(Sender: TObject);
     procedure FormGesture(Sender: TObject;
       const EventInfo: TGestureEventInfo; var Handled: Boolean);
@@ -200,25 +209,30 @@ begin
 end;
 
 procedure TKoszykForm.BtnSubmitOrderClick(Sender: TObject);
-var strList: TStringList;
-var i: Integer;
 begin
- if ListView1.Items.CheckedCount = 0 then
- begin
-   ShowMessage('Nie zaznaczono ¿adnych elementów.');
- end;
- strList := TStringList.Create;
- try
-   for i := 0 to ListView1.ItemCount-1 do
-     begin
-       if ListView1.Items[i].Checked then
-         strList.Add(ListView1.Items[i].Text);
-     end;
-     ShowMessage(strList.CommaText);
- finally
-   strList.Free;
- end;
-
+ GenIdQry.Close;
+    GenIdQry.Open;
+    var genID := GenIdQryGEN_ID.Value;
+    for var i:=0 to ListView1.ItemCount-1 do
+    begin
+      if ListView1.Items[i].Checked then
+      begin
+        DyspQry.Close;
+        DyspQry.ParamByName('GENID').Value := genID;
+        DyspQry.ParamByName('PRACOWNICY_ID').Value := '400001003';
+        DyspQry.ParamByName('MAGAZYNY_ID').Value := ListView1.Items[i].Data['MAGAZYNY_ID'].AsString;
+        DyspQry.ParamByName('WYDZIALY_ID').Value := ListView1.Items[i].Data['WYDZIALY_ID'].AsString;
+        DyspQry.ParamByName('ID1').Value := ListView1.Items[i].Data['SERIA_ID'].AsString;
+        DyspQry.ParamByName('ID2').Value := ListView1.Items[i].Data['LIMIT_ID'].AsString;
+        DyspQry.ParamByName('ID3').Value := ListView1.Items[i].Data['PZP_ID'].AsString;
+        DyspQry.ParamByName('ELEMENT_ID').Value := ListView1.Items[i].Data['ELEMENT_ID'].AsString;
+        DyspQry.ParamByName('ELEMENT_WGR_KOD').Value := ListView1.Items[i].Data['ELEMENT_WGR_KOD'].AsString;
+        DyspQry.ParamByName('ILOSC').Value := ListView1.Items[i].Data['Text4'].AsString;
+        DyspQry.Open;
+      end;
+    end;
+    Form6.Show;
+    Free;
 end;
 
 procedure TKoszykForm.CheckBoxSelectAllChange(Sender: TObject);
