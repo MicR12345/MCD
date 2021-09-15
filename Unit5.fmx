@@ -1,0 +1,45 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 137
+  ClientWidth = 451
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = []
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = claDimgray
+    Text = 'Czy na pewno chcesz z'#322'o'#380'y'#263' dyspozycj'#281'?'
+    TabOrder = 0
+  end
+  object OK: TCornerButton
+    ModalResult = 1
+    Position.X = 256.000000000000000000
+    Position.Y = 96.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 2
+    Text = 'OK'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = OKClick
+  end
+  object Anuluj: TCornerButton
+    ModalResult = 2
+    Position.X = 352.000000000000000000
+    Position.Y = 96.000000000000000000
+    Sides = [Top, Left, Bottom, Right]
+    TabOrder = 1
+    Text = 'Anuluj'
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    OnClick = AnulujClick
+  end
+end

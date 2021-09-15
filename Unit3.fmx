@@ -1,0 +1,123 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object GridBindSourceDB1: TGrid
+    Align = Bottom
+    CanFocus = True
+    ClipChildren = True
+    Position.Y = 296.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 184.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    RowCount = 0
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 159.000000000000000000
+  end
+  object IBDatabase1: TIBDatabase
+    Connected = True
+    DatabaseName = 'C:\Users\user\Desktop\R45.fdb'
+    Params.Strings = (
+      'user_name=SYSDBA'
+      'password=masterkey'
+      'sql_dialect=1')
+    LoginPrompt = False
+    DefaultTransaction = IBTransaction1
+    ServerType = 'IBServer'
+    SQLDialect = 1
+    Left = 96
+    Top = 200
+  end
+  object IBTransaction1: TIBTransaction
+    Active = True
+    DefaultDatabase = IBDatabase1
+    DefaultAction = TACommitRetaining
+    Params.Strings = (
+      'read_committed'
+      'rec_version'
+      'nowait')
+    Left = 240
+    Top = 184
+  end
+  object IBQuery1: TIBQuery
+    Database = IBDatabase1
+    Transaction = IBTransaction1
+    Active = True
+    BufferChunks = 1000
+    CachedUpdates = True
+    ParamCheck = True
+    SQL.Strings = (
+      'select * from MCD_GET_WG(:param1,:param2)')
+    Left = 344
+    Top = 200
+    ParamData = <
+      item
+        DataType = ftWord
+        Name = 'param1'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftWideString
+        Name = 'param2'
+        ParamType = ptUnknown
+      end>
+    object IBQuery1ARTYKUL_ID: TIntegerField
+      FieldName = 'ARTYKUL_ID'
+      Origin = 'MCD_GET_WG.ARTYKUL_ID'
+    end
+    object IBQuery1ARTYKUL_KOD: TIBStringField
+      FieldName = 'ARTYKUL_KOD'
+      Origin = 'MCD_GET_WG.ARTYKUL_KOD'
+      Size = 50
+    end
+    object IBQuery1ARTYKUL_OPIS: TIBStringField
+      FieldName = 'ARTYKUL_OPIS'
+      Origin = 'MCD_GET_WG.ARTYKUL_OPIS'
+      Size = 100
+    end
+    object IBQuery1REALIZACJA: TIBStringField
+      FieldName = 'REALIZACJA'
+      Origin = 'MCD_GET_WG.REALIZACJA'
+      Size = 250
+    end
+    object IBQuery1ILOSC_MAX: TFloatField
+      FieldName = 'ILOSC_MAX'
+      Origin = 'MCD_GET_WG.ILOSC_MAX'
+    end
+    object IBQuery1WGR_KOD: TIBStringField
+      FieldName = 'WGR_KOD'
+      Origin = 'MCD_GET_WG.WGR_KOD'
+      Size = 250
+    end
+    object IBQuery1ATTACHMENT: TSmallintField
+      FieldName = 'ATTACHMENT'
+      Origin = 'MCD_GET_WG.ATTACHMENT'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = IBQuery1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <>
+    end
+  end
+end
