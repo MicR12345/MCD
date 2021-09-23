@@ -241,8 +241,8 @@ end;
 procedure TForm9.CornerButton4Click(Sender: TObject);
 begin
   //sql do poczekalni
-  TFormPoczekalnia.Create(Form6).Show;
-  Free;
+  TFormPoczekalnia.Create(Self).Show;
+  Close;
 end;
 
 procedure TForm9.zlozClick(Sender: TObject);

@@ -3,121 +3,121 @@ Visible=False
 Coordinates=57,77,59,58
 
 [StyleBook1]
-Coordinates=517,155,80,36
+Coordinates=517,155,70,33
 
 [clr]
-Coordinates=35,173,45,58
+Coordinates=35,173,40,51
 
 [panel1]
-Coordinates=0,233,53,36
+Coordinates=0,233,46,33
 
 [PopupMenu1]
-Coordinates=517,210,90,36
+Coordinates=517,210,79,33
 
 [MenuItem3]
-Coordinates=517,265,79,36
+Coordinates=517,265,68,33
 
 [Label1]
-Coordinates=61,269,53,58
+Coordinates=61,269,46,51
 
 [zloz]
-Coordinates=517,362,40,36
+Coordinates=517,362,40,33
 
 [Image7]
-Coordinates=133,173,57,58
+Coordinates=133,173,49,51
 
 [Rectangle1]
-Coordinates=409,307,80,36
+Coordinates=409,307,69,33
 
 [MenuItem2]
-Coordinates=666,1,79,36
+Coordinates=666,1,68,33
 
 [searchAnim]
-Coordinates=666,56,82,36
+Coordinates=666,56,73,33
 
 [transMCD]
-Coordinates=379,365,72,36
+Coordinates=379,365,62,33
 
 [Image6]
-Coordinates=120,269,57,58
+Coordinates=120,269,49,51
 
 [Image2]
-Coordinates=517,1,57,58
+Coordinates=517,1,49,51
 
 [Image4]
-Coordinates=287,269,57,58
+Coordinates=287,269,49,51
 
 [Image8]
-Coordinates=76,1,57,58
+Coordinates=76,1,49,51
 
 [Edit1]
-Coordinates=179,269,44,58
+Coordinates=179,269,40,51
 
 [koszykCount]
-Coordinates=217,207,88,58
+Coordinates=217,207,78,51
 
 [MenuItem1]
-Coordinates=666,111,79,36
+Coordinates=666,111,68,33
 
 [Image5]
-Coordinates=0,0,57,58
+Coordinates=0,0,49,51
 
 [Image3]
-Coordinates=228,269,57,58
+Coordinates=228,269,49,51
 
 [GridBindSourceDB1]
-Coordinates=306,207,130,58
+Coordinates=306,207,113,51
 Visible=True
 
 [name]
-Coordinates=84,173,46,58
+Coordinates=84,173,41,51
 
 [pokaz]
-Coordinates=320,365,49,36
+Coordinates=320,365,43,33
 
 [Image1]
-Coordinates=517,78,57,58
+Coordinates=517,78,49,51
 
 [koszyk]
-Coordinates=261,365,54,36
+Coordinates=261,365,48,33
 
 [searchAnim2]
-Coordinates=666,166,89,36
+Coordinates=666,166,79,33
 
 [X]
-Coordinates=34,365,40,36
+Coordinates=34,365,40,33
 
 [poczekalnia]
-Coordinates=666,221,83,58
+Coordinates=666,221,72,51
 Visible=True
 
 [qryARTYKUL_OPIS]
-Coordinates=666,353,129,36
+Coordinates=666,353,109,33
 
 [Element]
-Coordinates=666,408,62,36
+Coordinates=666,408,54,33
 
 [qry]
-Coordinates=152,365,40,36
+Coordinates=152,365,40,33
 Visible=False
 
 [qryREALIZACJA]
-Coordinates=833,1,110,36
+Coordinates=833,1,95,33
 
 [Ilosc]
-Coordinates=666,463,41,36
+Coordinates=666,463,40,33
 
 [qryILOSC_MAX]
-Coordinates=833,111,105,36
+Coordinates=833,111,90,33
 
 [qryARTYKUL_KOD]
-Coordinates=833,166,126,36
+Coordinates=833,166,108,33
 
 [BindSourceDB1]
-Coordinates=152,365,106,168
+Coordinates=152,365,92,159
 
 [BindingsList1]
-Coordinates=517,155,91,36
+Coordinates=517,155,82,33
 
 [Form8.qryDysp]
 Visible=False
@@ -127,105 +127,105 @@ Visible=False
 
 [Form6.DataSource1]
 Visible=False
-Coordinates=408,548,130,36
+Coordinates=408,548,111,33
 
 [FormPoczekalnia.ClientDataSet1]
 Visible=False
-Coordinates=1202,1,204,36
+Coordinates=1202,1,174,33
 
 [FormPoczekalnia.ClientDataSetWydz]
 Visible=False
-Coordinates=1202,430,229,36
+Coordinates=1202,430,195,33
 
 [FormPoczekalnia.ClientDataSetMag]
 Visible=False
-Coordinates=1202,375,222,36
+Coordinates=1202,375,189,33
 
 [KoszykForm.ClientDataSet1]
 Visible=False
 
 [FormPoczekalnia.qryMiniCart]
 Visible=False
-Coordinates=782,56,184,36
+Coordinates=782,56,159,33
 
 [panIlosc]
-Coordinates=232,155,63,36
+Coordinates=232,155,56,33
 
 [Label4]
-Coordinates=343,78,53,58
+Coordinates=343,78,46,51
 
 [Label3]
-Coordinates=251,1,53,58
+Coordinates=251,1,46,51
 
 [CornerButton4]
-Coordinates=646,298,98,36
+Coordinates=646,298,87,33
 
 [Form6.BindSourceDB2]
-Coordinates=382,320,154,190
+Coordinates=382,320,129,159
 
 [CornerButton2]
-Coordinates=646,518,98,36
+Coordinates=646,518,87,33
 
 [Image10]
-Coordinates=232,78,64,58
+Coordinates=232,78,55,51
 
 [Label5]
-Coordinates=158,207,53,58
+Coordinates=158,207,46,51
 
 [Form6.qryTab]
-Coordinates=59,1,154,168
+Coordinates=59,1,129,141
 
 [Image9]
-Coordinates=343,1,57,58
+Coordinates=343,1,49,51
 
 [tb1]
-Coordinates=0,0,40,58
+Coordinates=0,0,40,51
 
 [CornerButton1]
-Coordinates=547,548,98,36
+Coordinates=547,548,87,33
 
 [StyleBook2]
-Coordinates=343,155,80,36
+Coordinates=343,155,70,33
 
 [Label2]
-Coordinates=99,207,53,58
+Coordinates=99,207,46,51
 
 [FormPoczekalnia.DataSource2]
-Coordinates=1202,78,192,36
+Coordinates=1202,78,164,33
 
 [qryARTYKUL_ID]
-Coordinates=0,512,111,36
+Coordinates=0,512,95,33
 
 [FormPoczekalnia.GenIdQry]
-Coordinates=782,221,173,80
+Coordinates=782,221,148,69
 
 [FormPoczekalnia.DataSource1]
-Coordinates=576,603,192,36
+Coordinates=576,603,164,33
 
 [ID]
-Coordinates=12,307,40,36
+Coordinates=12,307,40,33
 
 [FormPoczekalnia.BindSourceDB4]
-Coordinates=189,571,209,322
+Coordinates=189,571,180,267
 
 [FormPoczekalnia.DyspQry]
-Coordinates=20,571,167,58
+Coordinates=20,571,144,51
 
 [FormPoczekalnia.DataSource3]
-Coordinates=833,562,192,36
+Coordinates=833,562,164,33
 
 [FormPoczekalnia.qryWydzialy]
-Coordinates=1084,276,187,80
+Coordinates=1084,276,162,69
 
 [FormPoczekalnia.BindSourceDB2]
-Coordinates=833,441,213,102
+Coordinates=833,441,180,87
 
 [FormPoczekalnia.qryMagazyny]
-Coordinates=1202,177,194,80
+Coordinates=1202,177,167,69
 
 [FormPoczekalnia.InsertQry]
-Coordinates=993,1,171,58
+Coordinates=993,1,147,51
 
 [FormPoczekalnia.BindSourceDB3]
-Coordinates=833,320,209,102
+Coordinates=833,320,180,87
 

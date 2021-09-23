@@ -49,7 +49,6 @@ type
     BtnDelete: TButton;
     CheckBoxSelectAll: TCheckBox;
     ListView1: TListView;
-    ClientDataSet1: TClientDataSet;
     BtnSubmitOrder: TButton;
     Rectangle2: TRectangle;
     PopupDelete: TPopupMenu;
@@ -76,6 +75,8 @@ type
     qryCartELEMENT_WGR_KOD: TIBStringField;
     qryCartMAGAZYN_DST_ID: TIntegerField;
     BindSourceDB2: TBindSourceDB;
+    ClientDataSet1: TClientDataSet;
+    BindSourceDB1: TBindSourceDB;
     procedure ToolbarCloseButtonClick(Sender: TObject);
     procedure FormGesture(Sender: TObject;
       const EventInfo: TGestureEventInfo; var Handled: Boolean);
@@ -218,9 +219,9 @@ begin
       if ListView1.Items[i].Checked then
       begin
         DyspQry.Close;
-        DyspQry.ParamByName('GENID').Value := genID;
+        DyspQry.ParamByName('GENID').Value := genID.ToString;
         DyspQry.ParamByName('PRACOWNICY_ID').Value := '400001003';
-        DyspQry.ParamByName('MAGAZYNY_ID').Value := ListView1.Items[i].Data['MAGAZYNY_ID'].AsString;
+        DyspQry.ParamByName('MAGAZYNY_ID').Value := ListView1.Items[i].Data['MAGAZYN_ID'].AsString;
         DyspQry.ParamByName('WYDZIALY_ID').Value := ListView1.Items[i].Data['WYDZIALY_ID'].AsString;
         DyspQry.ParamByName('ID1').Value := ListView1.Items[i].Data['SERIA_ID'].AsString;
         DyspQry.ParamByName('ID2').Value := ListView1.Items[i].Data['LIMIT_ID'].AsString;
@@ -267,7 +268,6 @@ procedure TKoszykForm.FormCreate(Sender: TObject);
 
 begin
   qryCart.Open;
-
 end;
 
 procedure TKoszykForm.FormDestroy(Sender: TObject);

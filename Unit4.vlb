@@ -1,83 +1,83 @@
 ﻿[Image3]
-Coordinates=491,232,57,58
+Coordinates=491,232,49,51
 
 [ToolbarPopupAnimation]
-Coordinates=253,328,152,36
+Coordinates=253,328,134,33
 
 [panel1]
-Coordinates=721,368,53,36
+Coordinates=721,368,46,33
 
 [PopupMenu1]
-Coordinates=509,166,90,36
+Coordinates=509,166,79,33
 
 [Image1]
-Coordinates=667,10,57,58
+Coordinates=667,10,49,51
 
 [searchAnim2]
-Coordinates=509,276,89,36
+Coordinates=509,276,79,33
 
 [ToolbarApplyButton]
-Coordinates=353,232,128,58
+Coordinates=353,232,113,51
 
 [Label1]
-Coordinates=547,10,53,58
+Coordinates=547,10,46,51
 
 [searchAnim]
-Coordinates=509,331,82,36
+Coordinates=509,331,73,33
 
 [Button1]
-Coordinates=146,232,59,58
+Coordinates=146,232,53,51
 
 [Image7]
-Coordinates=289,10,57,58
+Coordinates=289,10,49,51
 
 [Image6]
-Coordinates=10,300,57,58
+Coordinates=10,300,49,51
 
 [ToolbarPopup]
-Coordinates=277,368,95,36
+Coordinates=277,368,84,33
 
 [clr]
-Coordinates=77,300,45,58
+Coordinates=77,300,40,51
 
 [Image8]
-Coordinates=79,232,57,58
+Coordinates=79,232,49,51
 
 [Image4]
-Coordinates=625,232,57,58
+Coordinates=625,232,49,51
 
 [ToolbarHolder]
-Coordinates=716,300,96,36
+Coordinates=716,300,84,33
 
 [MenuItem3]
-Coordinates=627,300,79,36
+Coordinates=627,300,68,33
 
 [ToolbarCloseButton]
-Coordinates=215,232,128,58
+Coordinates=215,232,113,51
 
 [Rectangle1]
-Coordinates=448,300,80,36
+Coordinates=448,300,69,33
 
 [ToolBar1]
-Coordinates=371,300,67,36
+Coordinates=371,300,58,33
 
 [Edit1]
-Coordinates=120,10,44,58
+Coordinates=120,10,40,51
 
 [Image2]
-Coordinates=692,232,57,58
+Coordinates=692,232,49,51
 
 [ToolbarAddButton]
-Coordinates=419,10,118,58
+Coordinates=419,10,105,51
 
 [Image5]
-Coordinates=734,10,57,58
+Coordinates=734,10,49,51
 
 [StyleBook1]
-Coordinates=618,535,80,36
+Coordinates=618,535,70,33
 
 [MenuItem2]
-Coordinates=282,300,79,36
+Coordinates=282,300,68,33
 
 []
 Coordinates=17,151,58,36
@@ -85,67 +85,57 @@ Visible=True
 ExplicitSubNodes=Col
 
 [koszyk]
-Coordinates=101,77,54,36
+Coordinates=101,77,48,33
 
 [koszykCount]
-Coordinates=0,0,88,58
+Coordinates=0,0,78,51
 
 [pokaz]
-Coordinates=42,77,49,36
+Coordinates=42,77,43,33
 
 [zloz]
-Coordinates=202,1,40,36
+Coordinates=202,1,40,33
 
 [qryMCDARTYKUL_KOD]
-Coordinates=183,87,155,36
+Coordinates=183,87,131,33
 
 [qryMCD]
-Coordinates=640,410,61,36
+Coordinates=766,430,53,33
 Visible=True
 
 [qryMCDWGR_KOD]
-Coordinates=384,87,127,36
+Coordinates=384,87,107,33
 
 [qryMCDARTYKUL_ID]
-Coordinates=364,161,140,36
+Coordinates=364,161,119,33
 
 [qryMCDREALIZACJA]
-Coordinates=215,161,139,36
+Coordinates=215,161,119,33
 
 [qryMCDILOSC_MAX]
-Coordinates=76,161,134,36
+Coordinates=76,161,113,33
 
 [qryMCDARTYKUL_OPIS]
-Coordinates=637,87,158,36
+Coordinates=637,87,133,33
 
 [qryMCDATTACHMENT]
-Coordinates=833,1,148,36
+Coordinates=833,1,125,33
 
 [transMCD]
-Coordinates=0,199,72,36
+Coordinates=0,199,62,33
 
 [BindSourceDB1]
-Coordinates=540,470,106,234
+Coordinates=703,420,92,195
 
 [GridBindSourceDB1]
-Coordinates=202,56,130,212
+Coordinates=202,56,113,177
 Visible=True
 
 [BindingsList1]
-Coordinates=202,133,91,36
+Coordinates=202,133,82,33
 
 [MenuItem1]
-Coordinates=164,306,79,36
-
-[Form6.DataSource1]
-Visible=False
-Coordinates=637,142,130,36
-
-[Form6.qryTab]
-Coordinates=30,60,154,168
-
-[Form6.BindSourceDB2]
-Coordinates=170,390,154,190
+Coordinates=164,306,68,33
 
 [Form8.qryDysp]
 Visible=False
@@ -154,5 +144,49 @@ Visible=False
 Visible=False
 
 [KoszykForm.ClientDataSet1]
+Visible=False
+Coordinates=11,403,151,33
+
+[KoszykForm.qryCart]
+Visible=False
+Coordinates=334,403,115,33
+
+[KoszykForm.DyspQry]
+Coordinates=562,80,121,51
+
+[CheckColumn1]
+Coordinates=542,403,89,33
+
+[KoszykForm.qryDelete]
+Coordinates=562,150,125,51
+
+[KoszykForm.GenIdQry]
+Coordinates=940,0,125,69
+
+[KoszykForm.DataSource1]
+Coordinates=144,1,141,33
+
+[KoszykForm.BindSourceDB2]
+Coordinates=371,587,167,285
+
+[StringColumn1]
+Coordinates=453,403,88,33
+
+[Button3]
+Coordinates=85,88,53,51
+
+[pocz]
+Coordinates=725,194,40,33
+
+[KoszykForm.BindSourceDB1]
+Coordinates=830,50,167,285
+
+[grd]
+Coordinates=349,1,40,51
+
+[label2]
+Coordinates=36,88,43,51
+
+[Form6.DataSource1]
 Visible=False
 

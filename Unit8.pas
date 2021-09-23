@@ -114,7 +114,7 @@ end;
 
 procedure TForm8.Image4Click(Sender: TObject);
 begin
-  UnitKoszyk.TKoszykForm.Create(Self).Show;
+  TKoszykForm.Create(Form6).Show;
   Free;
 end;
 

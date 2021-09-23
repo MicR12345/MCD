@@ -137,7 +137,7 @@ implementation
 
 {$R *.fmx}
 
-uses Unit6,Unit11, UnitKoszyk;
+uses Unit6,Unit11, UnitKoszyk, Unit9;
 
 function GenerateSQLWithFilters(ListViewWydz, ListViewMag: TListView): String;
   var sqlStr: String;
@@ -298,7 +298,7 @@ begin
       if ListView1.Items[i].Checked then
       begin
         DyspQry.Close;
-        DyspQry.ParamByName('GENID').Value := genID;
+        DyspQry.ParamByName('GENID').Value := genID.ToString;
         DyspQry.ParamByName('PRACOWNICY_ID').Value := '400001003';
         DyspQry.ParamByName('MAGAZYNY_ID').Value := ListView1.Items[i].Data['MAGAZYNY_ID'].AsString;
         DyspQry.ParamByName('WYDZIALY_ID').Value := ListView1.Items[i].Data['WYDZIALY_ID'].AsString;
@@ -382,6 +382,10 @@ end;
 procedure TFormPoczekalnia.FormCreate(Sender: TObject);
 begin
   qryMiniCart.SQL.Text := 'select * from MCD_GET_ELEMENTY_WG(:user, :type) where WYROB_ID = :w_id1 OR WYROB_ID = :w_id2';
+  for var i := 0 to Form9.poczekalnia.RowCount do
+  begin
+  Form9.poczekalnia.Cells[4,i];
+  end;
   qryMiniCart.ParamByName('user').Value := 299;
   qryMiniCart.ParamByName('type').Value := 1;
   qryMiniCart.ParamByName('w_id1').Value := 13525;
